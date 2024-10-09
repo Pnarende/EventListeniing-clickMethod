@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color Generator</title>
+</head>
+<body>
+    <h1>Random Color Generator</h1>
+    Name: <input type="text" id="name">
+    <button id="btn">Submit</button>
+    <script>
+        let x = document.getElementById("btn");
+        x.addEventListener("click", Change);
+
+        function Change() {
+            var color = '#';
+            var num = '0123456789ABCDEF';
+            for (let i = 0; i < 6; i++) {
+                var r = Math.floor(Math.random() * 16);
+                color += num[r];
+            }
+            document.body.style.backgroundColor = color;
+        }
+
+        var s = document.getElementById("name");
+        // s.onfocus = Change2;
+        // s.onblur = Change3;
+
+        // function Change2() {
+        //     s.style.backgroundColor = "lightblue";  // Change color when input is focused
+        // }
+
+        // function Change3() {
+        //     s.style.backgroundColor = "";  // Revert color when input loses focus
+        // }
+    </script>
+</body>
+</html>
