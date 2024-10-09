@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listening</title>
+</head>
+<body>
+    <h1>Event Listening in JavaScript</h1>
+    <h1>Inline Event Listening..</h1>
+    Name: <input type="text" id="name" ><br><br>
+    <button id="name" onclick="body.style.backgroundColor='red'">Submit</button>
+
+    <h1>Using Named Functions...</h1>
+    <button id="btn" onclick="Change()">Submit</button>
+    <h1>Using Anonymous Function..</h1>
+        <button id="btn1" >Submit</button>
+        
+
+
+        <h1>Add EventListener Method..</h1>
+        Name:<input type="text" id="name">
+        <button id="btns">Submit</button>
+        
+    <script>
+        let butt=document.getElementById("btn");
+        butt.onclick=Change;
+    function Change(){
+       document.body.style.backgroundColor='orange';
+    }
+     let but=document.getElementById("btn1");
+     but.onclick=function(){
+        document.body.style.backgroundColor="pink"
+    };
+        /*----------using  addEventListener() method..---------------------*/
+        let x=document.getElementById("btns");
+        x.addEventListener("click",Change)
+            function Change() {
+                document.body.style.backgroundColor="violet";
+                
+            }
+        
+     
+        
+      </script>
+         
+
+
+    
+
+
+
+</body>
+</html>
