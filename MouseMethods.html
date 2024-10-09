@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add EventListener Meyhod..</title>
+</head>
+<body>
+    <h1>Sample Program for mouseover</h1>        
+    Name:<input type="text" id="name" placeholder="Enter your name">
+    <button id="btn">Submit</button>
+    <script>
+        /*
+        Mouse Events
+        1. click
+        2. doubleclick ->dblclick
+        3. mouseover
+        4. mouseout
+        5. mousemove 
+        */
+        let b=document.getElementById("btn");
+        b.addEventListener("dblclick",Change)
+        function Change(){
+            document.body.style.backgroundColor="pink";
+            }
+    </script>
+
+</body>
+</html>
