@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Events</title>
+</head>
+<body>
+    <h1>Focus Events</h1>
+    Name:<input type="text" id="name" placeholder="Enter your name">
+    <button id="btn">Submit</button>
+    <script>
+        let focus=document.getElementById("name");
+        focus.addEventListener("focus",Change);
+        function Change(){
+            focus.style.background="yellow";
+        }
+    </script>
+    
+</body>
+</html>
